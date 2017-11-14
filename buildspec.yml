@@ -3,7 +3,6 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - cd HelloWorld
       - dotnet restore
   build:
     commands:
@@ -16,4 +15,4 @@ phases:
 artifacts:
   files:
     - '*'
-  base-directory: 'HelloWorld/src/HelloWorld/bin/Debug/netcoreapp1.0/publish'
+  base-directory: 'src/HelloWorld/bin/Debug/netcoreapp1.0/publish'
