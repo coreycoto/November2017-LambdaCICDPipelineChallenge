@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - cd HelloWorld
+      - dotnet restore
+  build:
+    commands:
+      - dotnet build
+  post_build:
+    commands:
+      - dotnet publish
+      - cd test/HelloWorld.Tests
+      - dotnet test
+artifacts:
+  files:
+    - '*'
+  base-directory: 'HelloWorld/src/HelloWorld/bin/Debug/netcoreapp1.0/publish'
