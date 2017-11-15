@@ -29,18 +29,18 @@ Once you have edited your function you can use the following command lines to bu
 
 Restore dependencies
 ```
-    cd "HelloWorld"
+    cd "LambdaDeployer"
     dotnet restore
 ```
 
 Execute unit tests
 ```
-    cd "HelloWorld/test/HelloWorld.Tests"
+    cd "LambdaDeployer/test/LambdaDeployer.Tests"
     dotnet test
 ```
 
 Deploy function to AWS Lambda
 ```
-    cd "HelloWorld/src/HelloWorld"
+    cd "LambdaDeployer/src/LambdaDeployer"
     dotnet lambda deploy-function
 ```
